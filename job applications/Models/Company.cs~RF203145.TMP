@@ -1,0 +1,13 @@
+﻿namespace job_applications.Models
+{
+    public class Company
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string PasswordHash { get; set; }
+
+        // Initialize the Jobs collection to an empty list
+        public ICollection<Job> Jobs { get; set; } = new List<Job>();
+    }
+}
